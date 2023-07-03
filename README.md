@@ -80,18 +80,14 @@ In order to run this project you need:
   - Node.js
   - React.js
 
-
-
 ### Setup
 
 Clone this repository to your desired folder by opening the terminal and running the following command:
 
 ```sh
-  git clone git@github.com:Zven94/JS-group-capstone.git
+  git clone https://github.com/Zven94/math-magicians.git
 
 ```
-
-
 ### Install
 
 Install this project with:
