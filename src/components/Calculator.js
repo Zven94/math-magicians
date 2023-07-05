@@ -5,7 +5,7 @@ const calcButtons = ['AC', '+/-', '%', '/', '7', '8', '9', 'X', '4', '5', '6', '
 function ShowButtons() {
   function CreateElement(text, index) {
     let className = '';
-    if ((index + 1) % 4 === 0) {
+    if ((index + 1) % 4 === 0 || (index + 1) === 19) {
       className = ' makeMe-orange';
     } else if ({ text }.text === '0') {
       className = ' calc-button-0';
