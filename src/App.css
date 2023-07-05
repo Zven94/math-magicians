@@ -11,8 +11,17 @@
   font-size: 8px;
 }
 
+.calc-grid {
+  width: 200px;
+  padding: 1px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto repeat(4, 1fr);
+  gap: 2px;
+}
+
 button {
-  width: 50px;
+  width: 48px;
   height: 30px;
   font-size: 8px;
   border-radius: 0;
@@ -27,7 +36,9 @@ button {
 }
 
 .calc-button-0 {
-  width: 100px;
+  width: 96px;
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
 .makeMe-orange {
