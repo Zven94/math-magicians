@@ -1,3 +1,11 @@
+.calc-divs {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .row-total {
   width: 200px;
   background-color: #9d9d9d;
@@ -11,8 +19,17 @@
   font-size: 8px;
 }
 
+.calc-grid {
+  width: 200px;
+  padding: 1px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto repeat(4, 1fr);
+  gap: 2px;
+}
+
 button {
-  width: 50px;
+  width: 48px;
   height: 30px;
   font-size: 8px;
   border-radius: 0;
@@ -20,14 +37,10 @@ button {
   font-weight: 400;
 }
 
-.calc-divs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
 .calc-button-0 {
-  width: 100px;
+  width: 98px;
+  grid-column: span 2;
+  grid-row: span 1;
 }
 
 .makeMe-orange {
