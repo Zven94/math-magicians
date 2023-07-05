@@ -2,7 +2,7 @@ import React from 'react';
 
 const calcButtons = ['AC', '+/-', '%', '/', '7', '8', '9', 'X', '4', '5', '6', '-', '1', '2', '3', '+', '0', '.', '='];
 
-function ShowButtons() {
+function Calculator() {
   function CreateElement(text, index) {
     let className = '';
     if ((index + 1) % 4 === 0 || (index + 1) === 19) {
@@ -23,4 +23,4 @@ function ShowButtons() {
   );
 }
 
-export default ShowButtons;
+export default Calculator;

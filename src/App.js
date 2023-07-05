@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import ShowButtons from './components/Calculator';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       </div>
 
       <div className="calc-grid">
-        <ShowButtons />
+        <Calculator />
       </div>
     </main>
   );
