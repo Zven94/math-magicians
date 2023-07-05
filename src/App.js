@@ -18,7 +18,6 @@ function App() {
 
       <div className="calc-grid">
         <Calculator handleButtonClicked={handleButtonClicked}/>
-        <button onClick={() => handleButtonClicked('1')}>1</button>
       </div>
     </main>
   );
