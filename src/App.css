@@ -1,3 +1,11 @@
+.calc-divs {
+  display: flex;
+  height: 50vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .row-total {
   width: 200px;
   background-color: #9d9d9d;
@@ -27,12 +35,6 @@ button {
   border-radius: 0;
   border: 1px solid #9d9d9d;
   font-weight: 400;
-}
-
-.calc-divs {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .calc-button-0 {
