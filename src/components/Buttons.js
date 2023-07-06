@@ -11,10 +11,9 @@ function Buttons({ onButtonClick }) {
       if ({ text }.text === '=') {
         className = ' calc-button-iqual';
       }
-
     } else if ({ text }.text === '0') {
       className = ' calc-button-0';
-    } 
+    }
 
     return (
 
