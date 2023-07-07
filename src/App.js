@@ -1,24 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import Calculator from './components/Calculator';
+import Quote from './components/displayQuote';
 
 function App() {
-  const [pressedButton, setPressedButton] = useState('0');
-
-  const handleButtonClicked = (button) => {
-    setPressedButton(button);
-  };
-
   return (
-    <main className="calc-divs">
-      <div className="row-total">
-        <h2 className="calc-total">{pressedButton}</h2>
-      </div>
+    <>
+      <main className="calc-divs">
+        <Calculator />
 
-      <div className="calc-grid">
-        <Calculator handleButtonClicked={handleButtonClicked} />
-      </div>
-    </main>
+      </main>
+      <footer className="footer">
+        <Quote />
+      </footer>
+    </>
   );
 }
 
