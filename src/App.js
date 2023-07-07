@@ -3,12 +3,11 @@ import './App.css';
 import Calculator from './components/Calculator';
 
 function App() {
-
   const [pressedButton, setPressedButton] = useState('0');
 
   const handleButtonClicked = (button) => {
-    setPressedButton(button)
-  }
+    setPressedButton(button);
+  };
 
   return (
     <main className="calc-divs">
@@ -17,7 +16,7 @@ function App() {
       </div>
 
       <div className="calc-grid">
-        <Calculator handleButtonClicked={handleButtonClicked}/>
+        <Calculator handleButtonClicked={handleButtonClicked} />
       </div>
     </main>
   );
