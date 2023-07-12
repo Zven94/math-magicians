@@ -10,13 +10,13 @@ function App() {
         <h2>Math Magicians</h2>
         <nav className="nav-li">
           <li>
-            <Link to="/" className='header-nav-home'>Home</Link>
+            <Link to="/" className="header-nav-home">Home</Link>
           </li>
           <li>
-            <Link to="/calculator" className='header-nav-calculator'>Calculator</Link>
+            <Link to="/calculator" className="header-nav-calculator">Calculator</Link>
           </li>
           <li>
-            <Link to="/quote" className='header-nav-quote'>Quote</Link>
+            <Link to="/quote" className="header-nav-quote">Quote</Link>
           </li>
         </nav>
       </header>
