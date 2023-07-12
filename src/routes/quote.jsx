@@ -4,9 +4,12 @@ import App from '../App';
 const quotePage = () => (
   <>
     <App />
-    <footer className="footer">
-      <Quote />
-    </footer>
+    <div className="quotePage-div">
+
+      <main className="footer">
+        <Quote />
+      </main>
+    </div>
   </>
 );
 
