@@ -1,13 +1,37 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import reportWebVitals from './reportWebVitals';
+
+// import routes
+import Home from './routes/home';
+import Calculator from './routes/calc';
+import Quote from './routes/quote';
+
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />,
+
+    // msg for error if the path you enter was not configured
+    errorElement: <h1>Error!</h1>,
+  },
+  {
+    path: '/calculator',
+    element: <Calculator />,
+  },
+  {
+    path: '/quote',
+    element: <Quote />,
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 );
 
