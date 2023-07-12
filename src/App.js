@@ -1,6 +1,5 @@
 import React from 'react';
 import './App.css';
-//  import Calculator from './components/Calculator';
 import { Link } from 'react-router-dom';
 
 function App() {
